@@ -3,5 +3,36 @@
   <head>
     <title>Contact Me</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Contact Me</h1>
+    <p>
+      If you are interested in discussing your project or any employment
+      opportunities with me, then please fill out the form below. I look forward
+      to hearing from you!
+    </p>
+    <form>
+      <label>
+        Name:
+        <input type="text" name="name" />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+      <label> Enquiry Information: </label>
+      <label> Type of Enquiry </label>
+      <input type="checkbox" name="type-of-enquiry" value="web page design" />
+      Web Design
+      <input type="checkbox" name="type-of-enquiry" value="web application" />
+      Web Application
+      <input type="checkbox" name="type-of-enquiry" value="job opportunity" />
+      Job opportunity
+      <input type="checkbox" name="type-of-enquiry" value="other" /> Other
+      <label>Further details</label>
+      <textarea id="enquiry info"></textarea>
+      <br />
+
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+  </body>
 </html>
