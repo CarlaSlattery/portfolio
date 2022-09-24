@@ -1,11 +1,39 @@
-/* ========== GLOBAL STYLING ===================== */
+/* ========== GLOBAL STYLING ============================================================ */
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00bcd4;
+  --secondary-color: #210124;
+  --accent-color: #ff4081;
+  --primary-text: #334e58;
+  --secondary-text: #757575;
+  --contrats-text: #fbf5f3;
+}
+
+/*=============== TYPOGRAPHY ======================== */
+
+a {
+  text-decoration: none;
 }
 
 /* =========== NAVIGATION ======================== */
 
 .nav-bar {
   position: fixed;
+}
+
+nav > a {
+  color: var(--contrats-text);
+}
+
+nav > a:hover,
+nav > a:focus {
+  color: var(--accent-color);
+}
+
+nav > a:active {
+  color: var(--primary-color);
 }
