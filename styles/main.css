@@ -1,0 +1,11 @@
+/* ========== GLOBAL STYLING ===================== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========== NAVIGATION ======================== */
+
+.nav-bar {
+  position: fixed;
+}
