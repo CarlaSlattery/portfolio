@@ -11,103 +11,107 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
   </head>
   <body>
-    <header>
-      <!-- =============== NAVIGATION ==============================================-->
-      <nav class="nav-bar-container">
-        <a href="index.html">Home</a>
-        <a href="./pages/contact.html">About</a>
-        <a href=" ./pages/projects.html">Work</a>
-        <a href="#index.html">Contact</a>
-      </nav>
+    <div class="container">
+      <header>
+        <!-- =============== NAVIGATION ==============================================-->
+        <nav class="nav-bar-container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/contact.html">About</a></li>
+            <li><a href=" ./pages/projects.html">Work</a></li>
+            <li><a href="#index.html">Contact</a></li>
+          </ul>
+        </nav>
 
-      <!-- ============== INTRO ==================================================-->
-      <div class="intro-banner">
-        <h1>Hi, I'm Carla Slattery</h1>
-        <h2 class="header-banner">Your next web developer</h2>
-        <img
-          class="header-img"
-          src="./images/my-pic.jpeg"
-          alt="picture of Carla"
-        />
-      </div>
-    </header>
-    <!-- ============= ABOUT SECTION ==========================================-->
-    <section class="about-me">
-      <h2>About Me</h2>
-      <p>
-        I have a passion for problem solving and helping people, which has led
-        to excellent opportunities in both human resources and physiotherapy in
-        my early career.
-      </p>
-      <p>
-        Recently, I've been combining my skills and experience with my love of
-        technology to create web solutions for people and businesses that can
-        help grow their market, enhance their image, or simply make their lives
-        that bit easier.
-      </p>
-      <div class="about-buttons"></div>
-
-      <a class="button" href="./pages/about.html">Read More</a>
-
-      <a class="button" href="./pages/about.html">My CV</a>
-
-      <a class="button" href="./pages/about.html">Connect</a>
-    </section>
-    <!-- ================ WORK SECTION ===================================-->
-
-    <section class="projects-container">
-      <h2>My Work</h2>
-      <div class="project-card first-item">
-        <h3>Project Title</h3>
-        <p>Brief Description of project to be added here</p>
-        <p>Built with <span>HTML</span>,& <span>CSS</span></p>
-        <p class="links">
-          <a class="button" href="#">Demo</a>
-          <a class="button" href="#">Code</a>
+        <!-- ============== INTRO ==================================================-->
+        <div class="intro-banner">
+          <h1>Hi, I'm Carla Slattery</h1>
+          <h2 class="header-banner">Your next web developer</h2>
+          <img
+            class="header-img"
+            src="./images/my-pic.jpeg"
+            alt="picture of Carla"
+          />
+        </div>
+      </header>
+      <!-- ============= ABOUT SECTION ==========================================-->
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          I have a passion for problem solving and helping people, which has led
+          to excellent opportunities in both human resources and physiotherapy
+          in my early career.
         </p>
-      </div>
-      <div class="project-card second-item">
-        <h3>Project Title</h3>
-        <p>Brief Description of project to be added here</p>
-        <p>Built with <span>HTML</span>,& <span>CSS</span></p>
-        <p class="links">
-          <a class="button" href="#">Demo</a>
-          <a class="button" href="#">Code</a>
+        <p>
+          Recently, I've been combining my skills and experience with my love of
+          technology to create web solutions for people and businesses that can
+          help grow their market, enhance their image, or simply make their
+          lives that bit easier.
         </p>
-      </div>
-      <div class="project-card third-item">
-        <h3>Project Title</h3>
-        <p>Brief Description of project to be added here</p>
-        <p>Built with <span>HTML</span>,& <span>CSS</span></p>
-        <p class="links">
-          <a class="button" href="#">Demo</a>
-          <a class="button" href="#">Code</a>
+        <div class="about-buttons"></div>
+
+        <a class="button" href="">Read More</a>
+
+        <a class="button" href="">My CV</a>
+
+        <a class="button" href="">Connect</a>
+      </section>
+      <!-- ================ WORK SECTION ===================================-->
+
+      <section class="projects-container">
+        <h2>My Work</h2>
+        <div class="project-card first-item">
+          <h3>Project Title</h3>
+          <p>Brief Description of project to be added here</p>
+          <p>Built with <span>HTML</span>,& <span>CSS</span></p>
+          <p class="links">
+            <a class="button" href="#">Demo</a>
+            <a class="button" href="#">Code</a>
+          </p>
+        </div>
+        <div class="project-card second-item">
+          <h3>Project Title</h3>
+          <p>Brief Description of project to be added here</p>
+          <p>Built with <span>HTML</span>,& <span>CSS</span></p>
+          <p class="links">
+            <a class="button" href="#">Demo</a>
+            <a class="button" href="#">Code</a>
+          </p>
+        </div>
+        <div class="project-card third-item">
+          <h3>Project Title</h3>
+          <p>Brief Description of project to be added here</p>
+          <p>Built with <span>HTML</span>,& <span>CSS</span></p>
+          <p class="links">
+            <a class="button" href="#">Demo</a>
+            <a class="button" href="#">Code</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================ CONTACT SECTION ===================================-->
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+
+        <p class="contact-message">
+          I am always seeking opportunities to contribute and develop. If you
+          would like to discuss any freelance projects, open-source
+          collaborations, or employed work then I'd love to hear from you.
         </p>
-      </div>
-    </section>
 
-    <!-- ================ CONTACT SECTION ===================================-->
-    <section class="contact-section">
-      <h2>Contact Me</h2>
+        <form class="contact-form">
+          <label for="name">Your name:</label>
+          <input type="text" id="name" name="user-name" />
+          <label for="email">Your email:</label>
+          <input type="email" name="user-email" />
+          <label for="message">Message:</label>
+          <textarea id="messageContent"></textarea>
+        </form>
+        <a href="https://twitter.com/Carlascode">Twitter</a>
+      </section>
 
-      <p class="contact-message">
-        I am always seeking opportunities to contribute and develop. If you
-        would like to discuss any freelance projects, open-source
-        collaborations, or employed work then I'd love to hear from you.
-      </p>
-
-      <form class="contact-form">
-        <label for="name">Your name:</label>
-        <input type="text" id="name" name="user-name" />
-        <label for="email">Your email:</label>
-        <input type="email" name="user-email" />
-        <label for="message">Message:</label>
-        <textarea id="messageContent"></textarea>
-      </form>
-      <a href="https://twitter.com/Carlascode">Twitter</a>
-    </section>
-
-    <!-- ================ FOOTER ==================================================-->
-    <footer>2022 | Design by Carla Slattery</footer>
+      <!-- ================ FOOTER ==================================================-->
+      <footer>2022 | Design by Carla Slattery</footer>
+    </div>
   </body>
 </html>
