@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
 :root {
   --primary-color: #190b28;
   --secondary-color: #1d8a99;
@@ -14,37 +20,34 @@
   --dark-text: #383e42;
 }
 
-html {
-  font-family: "Quicksand", "Lucida Grande", "Century Gothic", "Ariel";
-  font-size: 62.5%;
-}
-
 .container {
   margin: 0 auto;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 400;
+  color: var(--secondary-color);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 p,
 a,
 label {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
-h2,
-h3,
 p {
   color: var(--light-text);
+  font-weight: 200;
 }
 
 .accent {
@@ -59,7 +62,7 @@ p {
   border: 2px solid var(--secondary-color);
   padding: 0.5em 1.1em;
   border-radius: 5%;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .button:hover {
@@ -70,27 +73,28 @@ p {
 
 a {
   text-decoration: none;
+  color: (--light-text);
 }
 
 /* =========== NAVIGATION ======================== */
 
 .nav-bar-container {
   position: fixed;
+  z-index: 2;
   width: 100%;
   background: var(--primary-color);
-  border: 1px solid blueviolet;
   padding: 1em;
 }
 
 .nav-list {
   padding: 0;
   display: flex;
-  border: 1px solid blueviolet;
+
   justify-content: center;
 }
 
 .nav-list-item {
-  margin: 0 1em;
+  margin: 0 2em;
 }
 .nav-link {
   color: var(--light-text);
@@ -107,30 +111,37 @@ a {
   color: var(--secondary-color);
 }
 
-.current-page {
-  border-bottom: 1px solid var(--accent-color);
-}
-
 /*========================== INTRO =====================================*/
 
 h1 {
-  font-weight: 700;
   font-size: 5rem;
   padding: 1em;
-  margin: 0;
+
   text-align: center;
 }
 
 .intro-banner {
-  background: var(--primary-color);
-  background-image: url("/images/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+  background: RGBA(25, 11, 40, 0.9);
   color: var(--light-text);
   margin: 0;
   padding: 1em, 0.25em;
 }
 
+.banner-background::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("/images/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
 .subtitle {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--light-text);
   font-family: "Roboto Mono", "monospace";
   font-weight: 200;
@@ -146,7 +157,7 @@ h1 {
 
 /*======================= ABOUT ME SECTION ============================*/
 .about-me {
-  background: var(--primary-color);
+  background: RGBA(25, 11, 40, 0.9);
 }
 
 /*=================== WORK SECTION ===================================*/
@@ -160,7 +171,7 @@ h1 {
   border: 2px solid var(--secondary-color);
 }
 .links a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /*====================== CONTACT ME ================================= */
@@ -168,4 +179,20 @@ h1 {
 .contact-section {
   background: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.social a {
+  padding: 0.4em;
+  margin-right: 0.5em;
+}
+
+.icons {
+  margin-top: 1em;
+  margin-right: 0.25em;
+  color: var(--secondary-color);
+}
+
+.icons:hover {
+  color: var(--accent-color);
+  transition: color 0.3s ease-in-out;
 }
