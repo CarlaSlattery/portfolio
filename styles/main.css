@@ -47,6 +47,10 @@ p {
   color: var(--light-text);
 }
 
+.accent {
+  color: var(--accent-color);
+}
+
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -118,8 +122,9 @@ h1 {
 }
 
 .intro-banner {
-  background: var(--secondary-color);
-  color: var(--dark-text);
+  background: var(--primary-color);
+  background-image: url("/images/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+  color: var(--light-text);
   margin: 0;
   padding: 1em, 0.25em;
 }
