@@ -220,7 +220,8 @@ Currently causing links not to work and transparent banner content */
 .projects-container {
   background: var(--accent-color);
   display: grid;
-  grid-template-columns: repeat (minmax(350px, 1fr));
+  grid-template-columns: auto auto auto;
+  grid-template-rows: ;
 }
 
 .project-card {
@@ -252,10 +253,14 @@ Currently causing links not to work and transparent banner content */
   background: var(--primary-color);
   color: var(--secondary-color);
   display: grid;
+  grid-template-columns: auto;
 }
 
 .contact-section p {
   width: 90%;
+}
+.form-wrapper {
+  width: 50%;
 }
 
 form {
