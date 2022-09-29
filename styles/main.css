@@ -129,9 +129,17 @@ a {
 /*========================== INTRO =====================================*/
 
 .intro {
-  background: var(--primary-color); /*fallback in case image doesn't load */
+  background-color: var(--primary-color);
+}
 
-  background-size: cover;
+.subtitle {
+  background: var(--secondary-color);
+  color: var(--light-text);
+  font-family: "Roboto Mono", "monospace";
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+  padding: 0.25em;
 }
 
 .intro-banner {
@@ -164,30 +172,33 @@ h1 {
   margin: 0;
   padding: 1em, 0.25em;
 }
+.about-background {
+  background-image: url("/images/laptop-background.jpg");
+  background-size: cover;
+  position: relative;
+}
 
-/*
-.banner-background::before {
-  content: "";
+.about-background::before {
   position: absolute;
+  content: "";
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("/images/clement-helardot-95YRwf6CNw8-unsplash.jpg");
-  background-size: cover;
-  opacity: 0.2;
+  background-color: var(--primary-color);
+  opacity: 0.8;
   z-index: 0;
 }
-Currently causing links not to work and transparent banner content */
-.subtitle {
-  background: var(--secondary-color);
-  color: var(--light-text);
-  font-family: "Roboto Mono", "monospace";
-  font-weight: 200;
-  margin: 0;
-  text-align: center;
-  padding: 0.25em;
+
+/*
+.banner-background::before {
+   absolute;
+  
+  background-image: url("/imag
+  position:es/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+  background-size: cover;
 }
+  
 
 .header-img {
   height: auto;
@@ -203,6 +214,15 @@ Currently causing links not to work and transparent banner content */
 }
 
 /*======================= ABOUT ME SECTION ============================*/
+
+.about-me {
+  position: relative;
+  z-index: 1;
+}
+
+.about-me h2 {
+  background-color: transparent;
+}
 
 .about-buttons {
   margin-top: 7em;
