@@ -129,17 +129,29 @@ a {
 /*========================== INTRO =====================================*/
 
 .intro {
-  background: var(--primary-color);
+  background: var(--primary-color); /*fallback in case image doesn't load */
+
+  background-size: cover;
 }
 
-/*
-  background: RGBA(25, 11, 40, 0.9); /*fallback in case image doesn't load */
+.intro-banner {
+  position: relative;
+}
+
+.intro-banner::after {
+  content: "";
+  display: block;
+  background-image: url("/images/laptop-background.jpg");
+  background-color: currentColor;
+  opacity: 0.25;
+}
 /*background-position: bottom left;
   background-size: cover;
-  background-image: url("/images/laptop-background.jpg"); 
+  
   ++++++ try out on new branch to add color overlay ++++++++++
   */
 
+/*RGBA(25, 11, 40, 0.9);*/
 h1 {
   font-size: 5rem;
   padding: 1em;
@@ -200,6 +212,7 @@ Currently causing links not to work and transparent banner content */
 
 .about-me p {
   padding: 0.5em, 1.5em;
+  width: 90%;
 }
 
 /*=================== WORK SECTION ===================================*/
@@ -239,6 +252,10 @@ Currently causing links not to work and transparent banner content */
   background: var(--primary-color);
   color: var(--secondary-color);
   display: grid;
+}
+
+.contact-section p {
+  width: 90%;
 }
 
 form {
