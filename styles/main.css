@@ -21,9 +21,8 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   overflow-y: scroll;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*not appearing to work currently */
 }
 
 h1,
@@ -53,6 +52,11 @@ label {
 p {
   color: var(--light-text);
   font-weight: 200;
+}
+
+span {
+  font-weight: 400;
+  color: var(--secondary-color);
 }
 
 .accent {
@@ -219,6 +223,14 @@ Currently causing links not to work and transparent banner content */
 
 .links a {
   font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+.project-card span {
+  padding: 0.25em;
+  border: 1px solid var(--accent-color);
+  display: inline-block;
+  margin-top: 2em;
 }
 
 /*====================== CONTACT ME ================================= */
