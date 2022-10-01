@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-  overflow-y: scroll;
   scroll-behavior: smooth; /*not appearing to work currently */
 }
 
@@ -117,7 +116,7 @@ a {
   font-weight: 500;
 }
 
-.nav-link:hover, /*not working */
+.nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
@@ -126,32 +125,13 @@ a {
   color: var(--secondary-color);
 }
 
-/*========================== INTRO =====================================*/
+/*========================== BANNER =====================================*/
 
 .intro {
-  background: var(--primary-color); /*fallback in case image doesn't load */
-
+  background: var(--primary-color);
   background-size: cover;
 }
 
-.intro-banner {
-  position: relative;
-}
-
-.intro-banner::after {
-  content: "";
-  display: block;
-  background-image: url("/images/laptop-background.jpg");
-  background-color: currentColor;
-  opacity: 0.25;
-}
-/*background-position: bottom left;
-  background-size: cover;
-  
-  ++++++ try out on new branch to add color overlay ++++++++++
-  */
-
-/*RGBA(25, 11, 40, 0.9);*/
 h1 {
   font-size: 5rem;
   padding: 1em;
@@ -165,20 +145,6 @@ h1 {
   padding: 1em, 0.25em;
 }
 
-/*
-.banner-background::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url("/images/clement-helardot-95YRwf6CNw8-unsplash.jpg");
-  background-size: cover;
-  opacity: 0.2;
-  z-index: 0;
-}
-Currently causing links not to work and transparent banner content */
 .subtitle {
   background: var(--secondary-color);
   color: var(--light-text);
@@ -187,6 +153,26 @@ Currently causing links not to work and transparent banner content */
   margin: 0;
   text-align: center;
   padding: 0.25em;
+}
+
+/*======================= ABOUT ME SECTION ============================*/
+
+.about-background {
+  background-image: url("/images/laptop-background.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.about-background::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  z-index: 0;
 }
 
 .header-img {
@@ -202,7 +188,14 @@ Currently causing links not to work and transparent banner content */
   margin-top: 2.5em;
 }
 
-/*======================= ABOUT ME SECTION ============================*/
+.about-me-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-me-content h2 {
+  background-color: transparent;
+}
 
 .about-buttons {
   margin-top: 7em;
@@ -221,7 +214,6 @@ Currently causing links not to work and transparent banner content */
   background: var(--accent-color);
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: ;
 }
 
 .project-card {
