@@ -129,17 +129,9 @@ a {
 /*========================== INTRO =====================================*/
 
 .intro {
-  background-color: var(--primary-color);
-}
+  background: var(--primary-color); /*fallback in case image doesn't load */
 
-.subtitle {
-  background: var(--secondary-color);
-  color: var(--light-text);
-  font-family: "Roboto Mono", "monospace";
-  font-weight: 200;
-  margin: 0;
-  text-align: center;
-  padding: 0.25em;
+  background-size: cover;
 }
 
 .intro-banner {
@@ -172,33 +164,30 @@ h1 {
   margin: 0;
   padding: 1em, 0.25em;
 }
-.about-background {
-  background-image: url("/images/laptop-background.jpg");
-  background-size: cover;
-  position: relative;
-}
 
-.about-background::before {
-  position: absolute;
+/*
+.banner-background::before {
   content: "";
+  position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: var(--primary-color);
-  opacity: 0.8;
+  background-image: url("/images/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+  background-size: cover;
+  opacity: 0.2;
   z-index: 0;
 }
-
-/*
-.banner-background::before {
-   absolute;
-  
-  background-image: url("/imag
-  position:es/clement-helardot-95YRwf6CNw8-unsplash.jpg");
-  background-size: cover;
+Currently causing links not to work and transparent banner content */
+.subtitle {
+  background: var(--secondary-color);
+  color: var(--light-text);
+  font-family: "Roboto Mono", "monospace";
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+  padding: 0.25em;
 }
-  
 
 .header-img {
   height: auto;
@@ -214,15 +203,6 @@ h1 {
 }
 
 /*======================= ABOUT ME SECTION ============================*/
-
-.about-me {
-  position: relative;
-  z-index: 1;
-}
-
-.about-me h2 {
-  background-color: transparent;
-}
 
 .about-buttons {
   margin-top: 7em;
