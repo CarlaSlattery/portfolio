@@ -20,11 +20,12 @@ body {
   font-size: 62.5%;
   line-height: 1.5;
   background-color: var(--primary-color);
+  scroll-behavior: smooth;
 }
 
 .container {
   padding: 0 1em;
-  scroll-behavior: smooth; /*not appearing to work currently */
+   /*not appearing to work currently */
 }
 
 h1,
@@ -34,7 +35,6 @@ h3 {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   text-align: center;
- 
 }
 
 h2 {
@@ -67,6 +67,7 @@ span {
 
 /* BUTTONS */
 .button,
+.project-button,
 .submit {
   display: inline-block;
   background: var(--accent-color);
@@ -106,7 +107,6 @@ a {
 .nav-list {
   padding: 0;
   display: flex;
-
   justify-content: center;
 }
 
@@ -123,6 +123,7 @@ a {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-link:active {
@@ -218,11 +219,12 @@ h1 {
   background: var(--primary-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  
   grid-gap: 2em;
 }
 
 .card-content h3 {
-  padding 1.5em
+  padding: 0
 }
 
 .card-content p {
@@ -235,6 +237,7 @@ h1 {
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr (minmax(400px, 800px));
+  grid-template-rows: 
   /*grid-template-rows: minmax(200px, 300px), 1fr */
 
   grid-gap: 1em;
@@ -245,16 +248,22 @@ h1 {
   width: 100%;
 }
 
-.project-tech {
-  justify-content: center;
+
+.card-content {
+  display: grid;
+  grid-template-columns: 2fr;
 }
 
 .project-tech span {
   padding: 0.25em;
+  margin: 0.75em 0.5em;
   border: 1px solid var(--accent-color);
   display: inline-block;
-  
-  
+  align-items: center;
+}
+.project-links {
+  justify-content: center;
+  padding: 1em;
 }
 
 /*====================== CONTACT ME ================================= */
